@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Only Menu Toggle</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Hide default checkbox */
+    #menu-toggle {
+      display: none;
+    }
+
+   
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    /* Default icon (hamburger) */
+    .open-icon {
+      display: inline;
+    }
+
+    .close-icon {
+      display: none;
+    }
+
+    /* Menu content hidden by default */
+    nav {
+      display: none;
+      background: #f3f3f3;
+      padding: 10px;
+    }
+
+    /* Toggle states */
+    #menu-toggle:checked ~ .menu .open-icon {
+      display: none;
+    }
+
+    #menu-toggle:checked ~ .menu .close-icon {
+      display: inline;
+    }
+
+    #menu-toggle:checked ~ nav {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hidden checkbox to track toggle -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Label acts as button -->
+  <label for="menu-toggle" class="menu">
+    <span class="menu-icon open-icon">&#9776;</span>  <!-- Hamburger icon -->
+    <span class="menu-icon close-icon">&times;</span> <!-- Close icon -->
+  </label>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

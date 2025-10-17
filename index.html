@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Hero-Section </title>
+
+    <!-- Title Img favicon -->
+      <link rel="icon" type="image/png" href="/title img.png">
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -19,6 +22,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+        <link rel="stylesheet" href="/burger.css">
+
+        
 </head>
 
 <body>
@@ -26,8 +33,7 @@
     <header>
         <nav class="headernavbar">
             <figure class="header-nav-left">
-                <img src="https://smit-quiz-apps.netlify.app/images/smit-logo.png"
-                    width="100" alt="">
+                <img src="https://smit-quiz-apps.netlify.app/images/smit-logo.png" width="100" alt="">
 
             </figure>
 
@@ -38,6 +44,26 @@
                     <li><i class="fa-solid fa-address-card"></i>Contact</li>
                     <li><i class="fa-solid fa-location-dot"></i>Location</li>
                 </ul>
+
+                <!-- From Uiverse.io by talhabangyal --> 
+<label class="hamburger">
+  <input type="checkbox"  id="checkbox">
+  <svg viewBox="0 0 32 32">
+    <path
+      class="line line-top-bottom"
+      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+    ></path>
+    <path class="line" d="M7 16 27 16"></path>
+  </svg>
+</label>
+
+<label for="checkbox" class="checkbox-menu">
+    <span>Home</span>
+    <span>About</span>
+    <span>Contact</span>
+    <span>Location</span>
+</label>
+
             </div>
         </nav>
     </header>
@@ -51,17 +77,20 @@
                     Welcome to the World od Web Development| Learn the concept of Html, Css ,React , and much more!
                 </p>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam amet quaerat neque quae sequi obcaecati distinctio voluptatum nam sapiente blanditiis maxime quisquam rerum placeat voluptatibus, officia voluptates doloribus non.</p>
+                
                 <button class="slice">
-  <span class="text">Hover me</span>
-</button>
+                    <span class="text">Hover me</span>
+                </button>
             </div>
 
             <div class="heroright">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/153/368/small_2x/3d-website-developer-working-on-laptop-illustration-png.png" width="2000" alt="">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/011/153/368/small_2x/3d-website-developer-working-on-laptop-illustration-png.png"
+                    width="2000" alt="">
             </div>
         </section>
     </main>
-</body>
 
+    
+</body>
+ 
 </html>
